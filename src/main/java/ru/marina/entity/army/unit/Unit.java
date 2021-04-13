@@ -20,10 +20,16 @@ public abstract class Unit {
      */
     private int damage;
 
-    public Unit(String nameUnit, int live, int damage) {
+    /**
+     * Стоимость юнита
+     */
+    private int price;
+
+    public Unit(String nameUnit, int live, int damage, int price) {
         this.nameUnit = nameUnit;
         this.live = live;
         this.damage = damage;
+        this.price = price;
     }
 
     /**
@@ -63,5 +69,14 @@ public abstract class Unit {
 
     public void setDamage(int damage){
         this.damage = damage;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public Unit setPrice(int price) {
+        this.price = price;
+        return this;
     }
 }

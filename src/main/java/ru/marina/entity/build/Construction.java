@@ -5,11 +5,5 @@ package ru.marina.entity.build;
  */
 public interface Construction {
 
-    String buildings100();
-
-    String buildings75();
-
-    String buildings50();
-
-    String buildings25();
+    String view();
 }

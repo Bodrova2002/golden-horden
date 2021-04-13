@@ -8,8 +8,8 @@ public class CavalryImpl extends Unit implements Cavalry {
     private int armor;
     private boolean isFormWedge;
 
-    public CavalryImpl(String nameUnit, int live, int damage, int armor) {
-        super(nameUnit, live, damage);
+    public CavalryImpl(String nameUnit, int live, int damage, int armor, int price) {
+        super(nameUnit, live, damage, price);
         this.isFormWedge = false;
         this.armor = armor;
     }

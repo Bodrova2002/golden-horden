@@ -15,16 +15,16 @@ public class CrusadersArmyFactory implements ArmyFactory {
 
     @Override
     public Infantry createInfantry() {
-        return new InfantryImpl("Crusader",100, 50, 90);
+        return new InfantryImpl("Crusader",100, 50, 90, 100);
     }
 
     @Override
     public Cavalry createCavalry() {
-        return new CavalryImpl("Cavalry crusader", 120, 50, 80);
+        return new CavalryImpl("Cavalry crusader", 120, 50, 80, 150);
     }
 
     @Override
     public Archer createArcher() {
-        return new ArcherImpl("Archer Crusader",100, 20, 30, 5);
+        return new ArcherImpl("Archer Crusader",100, 20, 30, 5, 80);
     }
 }

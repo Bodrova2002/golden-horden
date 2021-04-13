@@ -12,8 +12,8 @@ public class ArcherImpl extends Unit implements Archer {
     private boolean fireArrows;
     private int accuracy;
 
-    public ArcherImpl(String nameUnit, int live, int damage, int accuracy, int distanceAttack) {
-        super(nameUnit, live, damage);
+    public ArcherImpl(String nameUnit, int live, int damage, int accuracy, int distanceAttack, int price) {
+        super(nameUnit, live, damage, price);
         this.accuracy = accuracy;
         this.distanceAttack = distanceAttack;
     }

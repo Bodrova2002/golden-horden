@@ -2,6 +2,7 @@ package ru.marina.entity.build;
 
 import ru.marina.entity.build.impl.Gates;
 import ru.marina.entity.build.impl.Tower;
+import ru.marina.entity.build.impl.Wall;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ public class Castle {
         }
 
         public CastleBuilder addWall(){
-            buildings.add(new Gates());
+            buildings.add(new Wall());
             return this;
         }
 

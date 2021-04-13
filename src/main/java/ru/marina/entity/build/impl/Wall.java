@@ -7,43 +7,15 @@ import ru.marina.entity.build.Construction;
  */
 public class Wall implements Construction {
 
+    public static final int price = 1000;
+
     @Override
-    public String buildings100() {
+    public String view() {
         return
                 "* * * *" +
                 "*******" +
                 "*******" +
                 "*******" +
                 "*******";
-    }
-
-    @Override
-    public String buildings75() {
-        return
-                "* *    " +
-                "*****  " +
-                "*******" +
-                "*******" +
-                "*******";
-    }
-
-    @Override
-    public String buildings50() {
-        return
-                "*      " +
-                "****   " +
-                "*****  " +
-                "*******" +
-                "*******";
-    }
-
-    @Override
-    public String buildings25() {
-        return
-                "       " +
-                "**     " +
-                "***    " +
-                "*_**   " +
-                "*****  ";
     }
 }

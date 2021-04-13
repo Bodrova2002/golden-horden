@@ -8,8 +8,8 @@ public class InfantryImpl extends Unit implements Infantry {
     private int armor;
     private boolean isCloseShields;
 
-    public InfantryImpl(String nameUnit, int live, int damage, int armor) {
-        super(nameUnit, live, damage);
+    public InfantryImpl(String nameUnit, int live, int damage, int armor, int price) {
+        super(nameUnit, live, damage, price);
         this.isCloseShields = false;
         this.armor = armor;
     }

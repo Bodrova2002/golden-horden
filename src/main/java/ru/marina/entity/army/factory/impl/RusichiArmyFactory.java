@@ -15,16 +15,16 @@ public class RusichiArmyFactory implements ArmyFactory {
 
     @Override
     public Infantry createInfantry() {
-        return new InfantryImpl("Russian warior",90, 50, 50);
+        return new InfantryImpl("Russian warior",90, 50, 50, 90);
     }
 
     @Override
     public Cavalry createCavalry() {
-        return new CavalryImpl("Russian cavalry", 100, 70, 70);
+        return new CavalryImpl("Russian cavalry", 100, 70, 70, 130);
     }
 
     @Override
     public Archer createArcher() {
-        return new ArcherImpl("Russian archer",90, 25, 25, 5);
+        return new ArcherImpl("Russian archer",90, 25, 25, 5, 80);
     }
 }
