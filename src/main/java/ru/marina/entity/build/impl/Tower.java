@@ -21,4 +21,9 @@ public class Tower implements Construction {
                 "|**********|\n" +
                 "|**********|\n";
     }
+
+    @Override
+    public int getArmor() {
+        return 1500;
+    }
 }

@@ -27,6 +27,11 @@ public class CavalryImpl extends Unit implements Cavalry {
     }
 
     @Override
+    public int getLive() {
+        return super.getLive() + armor;
+    }
+
+    @Override
     public int attack() {
         return getDamage();
     }

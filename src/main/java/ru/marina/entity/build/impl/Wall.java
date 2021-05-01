@@ -18,4 +18,9 @@ public class Wall implements Construction {
                 "*******" +
                 "*******";
     }
+
+    @Override
+    public int getArmor() {
+        return 1200;
+    }
 }

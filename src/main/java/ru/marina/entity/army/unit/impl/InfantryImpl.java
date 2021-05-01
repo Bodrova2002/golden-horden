@@ -27,6 +27,11 @@ public class InfantryImpl extends Unit implements Infantry {
     }
 
     @Override
+    public int getLive() {
+        return super.getLive() + armor;
+    }
+
+    @Override
     public int attack() {
         return getDamage();
     }

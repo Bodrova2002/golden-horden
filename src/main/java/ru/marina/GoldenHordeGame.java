@@ -1,18 +1,23 @@
 package ru.marina;
 
 import ru.marina.entity.Player;
-import ru.marina.gameplay.Game;
+import ru.marina.gameplay.CreateGame;
+import ru.marina.gameplay.GamePlay;
 
 public class GoldenHordeGame {
 
     public static void main(String[] args) {
-        Game game = new Game();
+        CreateGame createGame = new CreateGame();
         Player player = new Player();
-        game.welcome();
-        game.setNamePlayer(player);
-        game.setFraction(player);
-        game.createCastle(player);
-        game.createArmy(player);
-        game.createPeasant(player);
+        GamePlay gamePlay = new GamePlay(player, createGame);
+
+        createGame.welcome();
+        createGame.setNamePlayer(player);
+        createGame.setFraction(player);
+        createGame.createCastle(player);
+        createGame.createArmy(player);
+        createGame.createPeasant(player);
+
+        gamePlay.startGame();
     }
 }

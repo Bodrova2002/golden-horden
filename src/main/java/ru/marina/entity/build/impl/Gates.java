@@ -20,4 +20,9 @@ public class Gates implements Construction {
                 "_|__|__|_" +
                 "_|__|__|_";
     }
+
+    @Override
+    public int getArmor() {
+        return 1000;
+    }
 }

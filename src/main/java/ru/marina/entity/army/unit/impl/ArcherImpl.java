@@ -32,7 +32,7 @@ public class ArcherImpl extends Unit implements Archer {
 
     @Override
     public int attack() {
-        return getDamage();
+        return getDamage() + distanceAttack;
     }
 
     @Override

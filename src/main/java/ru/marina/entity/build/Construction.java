@@ -6,4 +6,6 @@ package ru.marina.entity.build;
 public interface Construction {
 
     String view();
+
+    int getArmor();
 }

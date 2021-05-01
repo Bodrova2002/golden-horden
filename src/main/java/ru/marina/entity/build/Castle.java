@@ -46,4 +46,8 @@ public class Castle {
             return new Castle(buildings);
         }
     }
+
+    public List<Construction> getBuildings() {
+        return buildings;
+    }
 }

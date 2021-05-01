@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Game {
+public class CreateGame {
 
     public void welcome() {
         out.println("Добро пожаловать в Golden-Horden");
@@ -89,9 +89,9 @@ public class Game {
         while (true) {
             out.println("У вас " + player.getMoney() + " дукатов");
             out.println("Выберите какой юнит нанять");
-            out.println("Всадник - 1");
-            out.println("Пехотинец - 2");
-            out.println("Лучник - 3");
+            out.println("Всадник - 1 (Стоимость - " + ((Unit) player.getArmyFactory().createCavalry()).getPrice() + ")");
+            out.println("Пехотинец - 2 (Стоимость - " + ((Unit) player.getArmyFactory().createInfantry()).getPrice() + ")");
+            out.println("Лучник - 3 (Стоимость - " + ((Unit) player.getArmyFactory().createArcher()).getPrice() + ")");
             out.println("0 - выход");
             int construction = in.nextInt();
             if (construction == 1) {
@@ -125,6 +125,7 @@ public class Game {
         Scanner in = new Scanner(System.in);
         while (true){
             out.println("У вас " + player.getMoney() + " дукатов");
+            out.println("Стоимость одного - " + Peasant.price);
             out.println("Введите количество");
             int count = in.nextInt();
             if (isCanPay(player.getMoney(), count* Peasant.price)) {
